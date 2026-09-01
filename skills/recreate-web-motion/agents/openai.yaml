@@ -1,0 +1,4 @@
+interface:
+  display_name: "网站动效复刻"
+  short_description: "Audit, recreate, and parameterize complete web motion"
+  default_prompt: "Use $recreate-web-motion to audit a reference site and implement its motion as an editable local experience."

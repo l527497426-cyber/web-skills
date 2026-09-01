@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "project": {
+    "name": "Untitled motion study",
+    "referenceUrl": null,
+    "auditedAt": null,
+    "localOnly": true,
+    "viewports": [
+      {
+        "id": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "input": "mouse",
+        "tested": false
+      },
+      {
+        "id": "mobile",
+        "width": 390,
+        "height": 844,
+        "dpr": 1,
+        "input": "touch",
+        "tested": false
+      }
+    ]
+  },
+  "runtime": {
+    "framework": null,
+    "animationEngine": null,
+    "scrollDriver": null,
+    "smoothScroll": {
+      "enabled": false,
+      "lerp": null
+    },
+    "reducedMotion": {
+      "tested": false,
+      "strategy": "show-final-state"
+    }
+  },
+  "scenes": [
+    {
+      "id": "s01-hero",
+      "label": "Hero",
+      "documentRange": {
+        "startPx": null,
+        "endPx": null
+      },
+      "layout": {
+        "mode": "normal-flow",
+        "heightPx": null,
+        "minHeightPx": null,
+        "overflow": "visible"
+      },
+      "effects": [
+        {
+          "id": "s01-e01",
+          "label": "Primary motion",
+          "target": "[replace-me]",
+          "family": "reveal",
+          "driver": "load",
+          "trigger": {
+            "start": null,
+            "end": null,
+            "scrubMs": null,
+            "once": false
+          },
+          "playback": {
+            "forward": "enter",
+            "reverse": "none",
+            "reentry": "replay",
+            "repeat": 0
+          },
+          "timing": {
+            "durationMs": 800,
+            "delayMs": 0,
+            "staggerMs": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
+          },
+          "keyframes": [
+            {
+              "offset": 0,
+              "opacity": 0,
+              "xPx": 0,
+              "yPx": 32,
+              "scale": 1,
+              "rotateDeg": 0,
+              "blurPx": 0
+            },
+            {
+              "offset": 1,
+              "opacity": 1,
+              "xPx": 0,
+              "yPx": 0,
+              "scale": 1,
+              "rotateDeg": 0,
+              "blurPx": 0
+            }
+          ],
+          "parameters": {},
+          "responsive": {
+            "desktop": "full",
+            "mobile": "full",
+            "touch": "same"
+          },
+          "reducedMotion": {
+            "strategy": "show-final-state",
+            "durationMs": 0
+          },
+          "editor": {
+            "enabled": true,
+            "controls": [
+              "enabled",
+              "durationMs",
+              "easing"
+            ]
+          },
+          "evidence": {
+            "status": "unknown",
+            "confidence": "low",
+            "observations": [],
+            "basis": [],
+            "tolerance": null,
+            "unknowns": [
+              "Replace the starter effect after auditing the reference."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "globalEffects": [],
+  "acceptance": [
+    {
+      "id": "qa-001",
+      "description": "All content remains visible when motion is disabled.",
+      "status": "pending",
+      "evidence": []
+    }
+  ],
+  "unknowns": [],
+  "deviations": []
+}
