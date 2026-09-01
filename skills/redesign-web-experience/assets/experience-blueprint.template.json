@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "project": {
+    "name": "Untitled experience redesign",
+    "mode": "existing-page-redesign",
+    "auditStatus": "uninspected",
+    "deliveryStatus": "proposal",
+    "pageType": "landing",
+    "sourcePaths": [],
+    "targetRoutes": [],
+    "localOnly": true,
+    "viewports": [
+      {
+        "id": "desktop",
+        "width": 1440,
+        "height": 900,
+        "input": "mouse",
+        "tested": false
+      },
+      {
+        "id": "mobile",
+        "width": 390,
+        "height": 844,
+        "input": "touch",
+        "tested": false
+      }
+    ]
+  },
+  "brief": {
+    "audiences": [],
+    "businessGoals": [],
+    "primaryAction": {
+      "label": null,
+      "target": null
+    },
+    "experienceThesis": null,
+    "desiredEmotions": [],
+    "antiGoals": []
+  },
+  "preservationContract": {
+    "mustPreserve": [
+      {
+        "id": "preserve-core-action",
+        "kind": "flow",
+        "label": "Primary product action",
+        "sourceRef": "[replace-me]",
+        "verification": "pending",
+        "sceneIds": [
+          "scene-orient"
+        ],
+        "implementationRefs": []
+      }
+    ],
+    "mayTransform": [],
+    "mustNotInvent": [
+      "Product capabilities, metrics, testimonials, awards, guarantees, and legal claims without evidence"
+    ],
+    "functionalFlows": []
+  },
+  "contentInventory": [
+    {
+      "id": "content-primary-action",
+      "sourceRefs": [
+        "[replace-me]"
+      ],
+      "kind": "action",
+      "role": "action",
+      "original": "[replace-me]",
+      "truthStatus": "unknown",
+      "factualClaims": [],
+      "disposition": "keep",
+      "decisionLabel": "deferred",
+      "finalText": "[replace-me]",
+      "claimStatus": "unverified",
+      "sceneIds": [
+        "scene-orient"
+      ],
+      "rationale": "Replace with the existing primary action before implementation."
+    }
+  ],
+  "creativeDirection": {
+    "status": "proposal",
+    "chosenDirection": null,
+    "experiencePrinciples": [],
+    "tone": {
+      "traits": [],
+      "antiTraits": []
+    },
+    "emotionalArc": [],
+    "visualLanguage": null,
+    "alternatives": []
+  },
+  "scenes": [
+    {
+      "id": "scene-orient",
+      "label": "Opening orientation",
+      "role": "orient",
+      "contentRefs": [
+        "content-primary-action"
+      ],
+      "userOutcome": {
+        "sees": "[replace-me]",
+        "understands": "[replace-me]",
+        "feels": "[replace-me]",
+        "does": "[replace-me]"
+      },
+      "layout": {
+        "pattern": "[replace-me]",
+        "grid": "[replace-me]",
+        "density": "balanced",
+        "focus": "[replace-me]",
+        "mediaRole": "support",
+        "breakpoints": {
+          "desktop": "[replace-me]",
+          "tablet": "[replace-me]",
+          "mobile": "[replace-me]"
+        }
+      },
+      "hierarchy": [],
+      "motionRefs": [],
+      "implementationRefs": []
+    }
+  ],
+  "motionImports": [],
+  "patternDecisions": [],
+  "motionEffects": [],
+  "designSystem": {
+    "tokensFile": null,
+    "typeRoles": {},
+    "spacingScale": [],
+    "motionIntensity": "editorial",
+    "safeZones": []
+  },
+  "implementation": {
+    "framework": null,
+    "routes": [],
+    "files": [],
+    "preservedBindings": [],
+    "components": [],
+    "stateOwnership": [],
+    "integrationInterfaces": [],
+    "featureFlags": [],
+    "editor": {
+      "required": false,
+      "schemaVersion": 1,
+      "persistence": null,
+      "importExport": false
+    }
+  },
+  "acceptance": [
+    {
+      "id": "qa-core-visible",
+      "category": "functional",
+      "criterion": "Core content and the primary action remain visible and usable when motion is unavailable.",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "qa-mobile-composition",
+      "category": "responsive",
+      "criterion": "The mobile layout is intentionally recomposed rather than scaled from desktop.",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "qa-reduced-motion",
+      "category": "a11y",
+      "criterion": "Reduced motion disables or replaces continuous, scrubbed, and pointer-driven effects while preserving meaning.",
+      "status": "pending",
+      "evidence": []
+    }
+  ],
+  "decisions": [],
+  "unknowns": [],
+  "deviations": []
+}

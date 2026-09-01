@@ -1,0 +1,4 @@
+interface:
+  display_name: "网站体验重构"
+  short_description: "Upgrade existing pages through copy, layout, and motion"
+  default_prompt: "使用 $redesign-web-experience，在保留现有事实和功能的前提下，整体升级这个页面的文案、排版、视觉层级与动态叙事，并实现到代码。"
